@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color:rgb(142, 61, 186);
+    --secondary-color : rgb(69, 61, 186);
+    --error-color:rgb(237, 27, 45);
+    --text-color:rgb(69, 67, 70);
+    --container: rgb(177, 177, 177);
+    --inputs-color:rgb(252, 244, 244);
+}
+html {
+    text-align: center;
+    font-family: "Poppins",'Segoe UI', 'sans-serif';
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    gap: 20px;
+}
+
+#main-container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 10px;
+    justify-self: center;
+    width: 400px;
+    height: 70%;
+    background-color: var(--container);
+    box-sizing: border-box;
+    gap: 15px;
+    box-shadow: 20px grey;
+}
+
+.inputs-container{
+    display: flex;
+    justify-content: center;
+    background-color: var(--container);
+    height: 50px;
+}
+.inputs-container button{
+    width: 35%;
+    height: 35px;
+    border-radius: 10px;
+    background-color: var(--main-color);
+    color: white;
+    border: 1px solid var(--main-color);
+}
+.inputs {
+    border: 1px solid var(--inputs-color);
+    border-radius: 0px 10px 10px 0px;
+    width: 65%;
+    height: 100%;
+    background-color: var(--inputs-color);
+}
+
+#icons {
+    color: white;
+
+}
+
+.icon-container {
+    background-color: var(--main-color);
+    height: 100%;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--main-color);
+    border-radius: 10px 0px 0px 10px;
+
+}
+
+#logo-box {
+    margin-top: 0px;
+    background-color: var(--main-color);
+    width: 120px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+    border-radius: 20px;
+    font-weight: 700
+
+
+}
+@media (max-width: 350px) {
+    #main-container{
+        width: 85%;
+    }
+    #logo-box {
+        height:50px;
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 400px) {
+    #main-container{
+        width: 85%;
+    }
+    #logo-box {
+        height:60px;
+        font-size: 1.6rem;
+    }
+}
